@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Danh mục hồ sơ chuyên môn</title>
+<meta name="description" content="Danh mục các trang giới thiệu hồ sơ chuyên môn cá nhân.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--g:#198039;--gd:#092e15;--gt:#3a5243;--tint:#eaf4ed;--soft:#f6faf7;--line:#e1ebe4;--mut:#62786a}
+*{box-sizing:border-box;margin:0}
+body{font:400 15px/1.65 "Be Vietnam Pro",system-ui,sans-serif;color:var(--gt);background:#fff}
+html[lang=en] .vi,html[lang=vi] .en{display:none}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--g);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 28px}
+.bar{border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:700;color:var(--gd)}
+.logo i{width:38px;height:38px;border-radius:11px;background:var(--g);display:grid;place-items:center}
+.lang{background:var(--tint);color:var(--g);border:0;border-radius:6px;padding:5px 14px;font:600 12px "Be Vietnam Pro",sans-serif;cursor:pointer}
+.hero{background:linear-gradient(100deg,var(--soft),#fff 75%);padding:72px 0 56px}
+.pill{display:inline-flex;align-items:center;gap:8px;background:var(--tint);color:var(--g);border-radius:99px;padding:6px 16px;font-size:13px;font-weight:600}
+.pill:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--g)}
+h1{font-size:clamp(34px,5vw,54px);line-height:1.12;font-weight:800;color:var(--gd);letter-spacing:-.02em;margin:20px 0 14px}
+h1 em{font-style:normal;color:var(--g)}
+.hero p{font-size:17px;max-width:54ch}
+.list{padding:48px 0 80px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:18px;padding:24px;background:#fff;text-decoration:none;transition:box-shadow .2s,border-color .2s}
+.card:hover{border-color:var(--g);box-shadow:0 14px 34px rgba(25,128,57,.12)}
+.card img{width:84px;height:84px;border-radius:50%;object-fit:cover;margin-bottom:18px;border:3px solid var(--tint)}
+.card h2{font-size:19px;font-weight:700;color:var(--gd);line-height:1.3}
+.card .role{font-size:14px;color:var(--g);font-weight:600;margin:4px 0 8px}
+.card p{font-size:14px;color:var(--mut);flex:1}
+.card .go{margin-top:20px;font-weight:600;font-size:14px;color:var(--g)}
+.card .go:after{content:" \2192"}
+.hint{margin-top:28px;font-size:13px;color:var(--mut)}
+footer{border-top:1px solid var(--line);padding:26px 0;font-size:13px;color:var(--mut)}
+@media(max-width:860px){.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}.hero{padding:48px 0 36px}}
+@media(prefers-reduced-motion:reduce){.card{transition:none}}
+</style>
+</head>
+<body>
+<div class="bar"><div class="wrap">
+<span class="logo"><i><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></i><span class="vi">Danh mục hồ sơ</span><span class="en">Profile directory</span></span>
+<button class="lang" id="lang" type="button" aria-label="Chuyển ngôn ngữ / Switch language">EN</button>
+</div></div>
+
+<main>
+<div class="hero"><div class="wrap">
+<span class="pill"><span class="vi">Hồ sơ chuyên môn cá nhân</span><span class="en">Personal professional profiles</span></span>
+<h1><span class="vi">Danh mục <em>hồ sơ chuyên môn</em></span><span class="en">Directory of <em>professional profiles</em></span></h1>
+<p><span class="vi">Mỗi người có một trang riêng giới thiệu chuyên môn, quá trình đào tạo và công trình nghiên cứu. Chọn một hồ sơ để xem chi tiết.</span><span class="en">Each person has a dedicated page covering expertise, training and research. Select a profile to read more.</span></p>
+</div></div>
+
+<div class="list"><div class="wrap">
+<div class="grid">
+
+<a class="card" href="https://b3abv175.github.io/bs-huy/">
+<img src="bs-huy.jpg" alt="Thạc sĩ, Bác sĩ Đoàn Thanh Huy" width="84" height="84">
+<h2><span class="vi">Thạc sĩ, Bác sĩ Đoàn Thanh Huy</span><span class="en">Dr. Doan Thanh Huy, MSc</span></h2>
+<div class="role"><span class="vi">Phẫu thuật Gan mật tụy</span><span class="en">Hepatobiliary and Pancreatic Surgery</span></div>
+<p><span class="vi">Bệnh viện Quân y 175. Phẫu thuật bệnh lý gan, mật, tụy và ghép gan.</span><span class="en">Military Hospital 175. Surgery of the liver, bile duct, pancreas and liver transplantation.</span></p>
+<span class="go"><span class="vi">Xem hồ sơ</span><span class="en">View profile</span></span>
+</a>
+
+<!-- ===== THÊM NGƯỜI MỚI: sao chép nguyên khối <a class="card"> ... </a> ở trên, dán vào đây, rồi sửa 5 chỗ:
+     đường dẫn href, ảnh (img src), tên, chuyên môn, mô tả. ===== -->
+
+</div>
+</div></div>
+</main>
+
+<footer><div class="wrap"><span class="vi">Đây là danh mục các trang cá nhân, không phải website chính thức của bất kỳ bệnh viện hay tổ chức nào. Nội dung chỉ để giới thiệu.</span><span class="en">A directory of personal pages, not the official website of any hospital or organisation. Content is for introduction only.</span></div></footer>
+
+<script>
+(function(){var b=document.getElementById('lang'),h=document.documentElement;
+try{var s=localStorage.getItem('lang');if(s){h.lang=s;b.textContent=s==='vi'?'EN':'VI'}}catch(e){}
+b.addEventListener('click',function(){var n=h.lang==='vi'?'en':'vi';h.lang=n;b.textContent=n==='vi'?'EN':'VI';try{localStorage.setItem('lang',n)}catch(e){}})})();
+</script>
+</body>
+</html>
